@@ -2371,6 +2371,24 @@
     ],
     "timestamp": "Jan/25/2021 22:57"
   },
+  "CF94962170": {
+    "contest_id": 1422,
+    "language": "PyPy 3",
+    "path": "codeforces/1422/B.py",
+    "platform": "Codeforces",
+    "problem_index": "B",
+    "problem_name": "Nice Matrix",
+    "problem_url": "https://codeforces.com/contest/1422/problem/B",
+    "submission_id": "CF94962170",
+    "submission_url": "https://codeforces.com/contest/1422/submission/94962170",
+    "tags": [
+      "greedy",
+      "implementation",
+      "math",
+      "*1300"
+    ],
+    "timestamp": "Oct/09/2020 11:54"
+  },
   "CF96495063": {
     "contest_id": 1433,
     "language": "GNU C++17",
