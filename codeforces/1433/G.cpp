@@ -31,10 +31,10 @@ int cost[1005][1005];
 void dik(int s){
 	f(i,0,n) cost[s][i]=LLONG_MAX;
 	cost[s][s]=0;
-    queue <int> pq;
+    priority_queue <int, vector<int>, greater<int>> pq;
     pq.push(s);
     while(!pq.empty()){
-    	int lp=pq.front(); pq.pop();
+    	int lp=pq.top(); pq.pop();
     	for(auto it : adj[lp]){
     		if(cost[s][it.ff]>cost[s][lp]+it.ss){
     			cost[s][it.ff]=cost[s][lp]+it.ss;
