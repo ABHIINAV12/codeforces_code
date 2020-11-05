@@ -2371,6 +2371,22 @@
     ],
     "timestamp": "Jan/25/2021 22:57"
   },
+  "CF97709943": {
+    "contest_id": 1432,
+    "language": "Kotlin",
+    "path": "codeforces/1432/E.kt",
+    "platform": "Codeforces",
+    "problem_index": "E",
+    "problem_name": "Binary String Minimizing",
+    "problem_url": "https://codeforces.com/contest/1432/problem/E",
+    "submission_id": "CF97709943",
+    "submission_url": "https://codeforces.com/contest/1432/submission/97709943",
+    "tags": [
+      "*special problem",
+      "greedy"
+    ],
+    "timestamp": "Nov/05/2020 19:16"
+  },
   "CF97709965": {
     "contest_id": 1432,
     "language": "Kotlin",
