@@ -2371,6 +2371,21 @@
     ],
     "timestamp": "Jan/25/2021 22:57"
   },
+  "CF97710012": {
+    "contest_id": 1432,
+    "language": "Kotlin",
+    "path": "codeforces/1432/A.kt",
+    "platform": "Codeforces",
+    "problem_index": "A",
+    "problem_name": "A+B (Trial Problem)",
+    "problem_url": "https://codeforces.com/contest/1432/problem/A",
+    "submission_id": "CF97710012",
+    "submission_url": "https://codeforces.com/contest/1432/submission/97710012",
+    "tags": [
+      "*special problem"
+    ],
+    "timestamp": "Nov/05/2020 19:17"
+  },
   "CF97852473": {
     "contest_id": 1443,
     "language": "GNU C++17",
