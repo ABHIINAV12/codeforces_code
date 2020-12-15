@@ -366,8 +366,8 @@ int inv(int a){
   
 void facto(){
   fact[0]=1;
-  f(i,1,200005) {fact[i]=i*fact[i-1]; fact[i]%=mod;}
-  f(i,0,200005) infact[i]=inv(fact[i]); 
+  f(i,1,2000005) {fact[i]=i*fact[i-1]; fact[i]%=mod;}
+  f(i,0,2000005) infact[i]=inv(fact[i]); 
 }
  
 int nck (int n,int k){
