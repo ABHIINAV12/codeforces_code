@@ -1,4 +1,22 @@
 {
+  "CF101378285": {
+    "contest_id": 1462,
+    "language": "GNU C++17 (64)",
+    "path": "codeforces/1462/F.cpp",
+    "platform": "Codeforces",
+    "problem_index": "F",
+    "problem_name": "The Treasure of The Segments",
+    "problem_url": "https://codeforces.com/contest/1462/problem/F",
+    "submission_id": "CF101378285",
+    "submission_url": "https://codeforces.com/contest/1462/submission/101378285",
+    "tags": [
+      "binary search",
+      "data structures",
+      "greedy",
+      "*1800"
+    ],
+    "timestamp": "Dec/16/2020 08:49"
+  },
   "CF101379680": {
     "contest_id": 1450,
     "language": "GNU C++17 (64)",
