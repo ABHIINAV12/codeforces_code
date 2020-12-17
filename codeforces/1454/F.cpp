@@ -532,7 +532,7 @@ void solve(){
 							cout<<"YES\n";
 							cout<<i+1<<" "<<right-left+1<<" "<<n-right-1<<"\n";
 							return ;
-						}else if(here<mx) break; // ---- 
+						}else if(here<mx) break;
 					}
 					++poss;
 				}
