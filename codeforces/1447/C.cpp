@@ -958,7 +958,7 @@ void B(){
 			x*=-1;
 		}
 		s+=x;
-		mn=min(mn,x);
+		mn=min(mn,s);
 	}	
 	if(cnt&1) cout<<s-2*mn<<"\n";
 	else cout<<s<<"\n";
