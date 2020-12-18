@@ -858,85 +858,79 @@ void solve(){
 
 void solve(){
 	int n; cin>>n;
-	int x[n+5]={0};
-	mpi mp;
-	++mp[x[1]];
-	int idx=-1;
+	int x[n+5]={0}; 
 	f(i,2,n+1){
 		cout<<"XOR 1 "<<i<<endl;
 		cin>>x[i];
+	}
+	bool dup=0;
+	map<int,int> mp; mp.clear();
+	int idx=-1;
+	f(i,1,n+1){
 		++mp[x[i]];
-		if(mp[x[i]]>=2){
-			 idx=i;
+		if(mp[x[i]]==2ll){
+			dup=1;
+			idx=i;
+			break;
 		}
 	}
-	if(idx!=-1){
+	if(dup){
 		if(x[1]==x[idx]){
 			cout<<"AND 1 "<<idx<<endl;
-			int req; cin>>req;
+			int req; cin>>req; 
 			f(i,1,n+1) x[i]^=req;
 			cout<<"! ";
 			f(i,1,n+1) cout<<x[i]<<" ";
 			cout<<endl;
 			return ;
 		}else{
-			int f=-1,l=idx;
-			f(i,1,n+1) if(x[i]==x[idx]){
-				f=i;
+			int ano=-1;
+			f(i,1,n+1) if(i==idx) continue;
+			else if(x[i]==x[idx]) {
+				ano=i;
 				break;
 			}
-			cout<<"AND "<<f<<" "<<l<<endl;
-			int num; cin>>num;
-			cout<<"XOR 1 "<<f<<endl;
-			int ano; cin>>ano;
-			int req=(ano^num);
-			f(i,1,n+1) x[i]^=req;
+			cout<<"AND "<<ano<<" "<<idx<<endl;
+			int ano1; cin>>ano1;
+			cout<<"XOR 1 "<<idx<<endl;
+			int xp; cin>>xp;
+			xp^=ano1;
+			f(i,1,n+1) x[i]^=xp;
 			cout<<"! ";
 			f(i,1,n+1) cout<<x[i]<<" ";
 			cout<<endl;
 			return ;
 		}
 	}else{
-		int ipx=-1;
-		f(i,1,n+1) if(x[i]==(n-1)){
-			ipx=i;
+		int look=n; --look;
+		int num1=-1;
+		f(i,2,n+1)
+			if(x[i]==look) {num1=i; break;}
+		assert(num1!=-1);
+		int num2=-1;
+		f(i,2,n+1) if(i!=num1) {
+			num2=i;
 			break;
 		}
-		assert(ipx!=-1);
-		int three=-1;
-		f(i,2,n+1) if(i!=ipx){
-			three=i;
-			break;
-		}
-		int a1ipx,aipxthree,a1three; 
-		a1ipx=0;
-		cout<<"AND "<<ipx<<" "<<three<<endl;
-		cin>>aipxthree;
-		cout<<"AND 1 "<<three<<endl;
-		cin>>a1three;
-		a1ipx*=2; aipxthree*=2; a1three*=2;
-		int req=a1ipx+aipxthree+a1three;
-		req+=x[ipx]+x[three]+(x[ipx]^x[three]);
-		req-=2*(x[ipx]^x[three]); req-=2*aipxthree;
-		req/=2; 
-		cout<<"! ";
+		assert(num2!=-1);
+		int val1,val2; 
+		cout<<"AND "<<num1<<" "<<num2<<endl;
+		cin>>val1;
+		cout<<"AND 1 "<<num2<<endl;
+		cin>>val2;
+		int req=x[num1]+x[num2];
+		val1*=2; val2*=2;
+	    req+=val2;
+		req-=(x[num1]^x[num2]);
+		req-=val1;
+		req/=2;
 		f(i,1,n+1) x[i]^=req;
+		cout<<"! ";
 		f(i,1,n+1) cout<<x[i]<<" ";
-		cout<<endl;	
+		cout<<endl;
+		return ;
 	}
 	return ;
-}
-
-void F(){
-	int n,m; cin>>n>>m;
-	int a[n][m]; f(i,0,n) f(j,0,m) cin>>a[i][j];
-	int diag[n+m-1]={0};
-	f(i,0,n)
-		f(j,0,m) diag[i+j]^=a[i][j];
-	int state=0;
-	f(i,0,n+m-1) if(diag[i]!=0) state=1;
-	if(state) cout<<"Ashish\n";
-	else cout<<"Jeel\n";
 }
 
 void input(){
