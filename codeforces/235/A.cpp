@@ -36,9 +36,9 @@ int lcm1(int a,int b,int c){
 void solve(){
 	int n; cin>>n;
 	int ret=-1;
-	for(int i=n;i>=max(1ll,n-3);--i){
-		for(int j=n;j>=max(1ll,n-3);--j){
-			for(int k=n;k>=max(1ll,n-3);--k){
+	for(int i=n;i>=max(1ll,n-5);--i){
+		for(int j=n;j>=max(1ll,n-5);--j){
+			for(int k=n;k>=max(1ll,n-5);--k){
 				int cmp=lcm1(i,j,k);
 				ret=max(ret,cmp);
 			}
