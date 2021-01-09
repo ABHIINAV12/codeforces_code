@@ -1,4 +1,21 @@
 {
+  "CF103852273": {
+    "contest_id": 986,
+    "language": "GNU C++17 (64)",
+    "path": "codeforces/986/B.cpp",
+    "platform": "Codeforces",
+    "problem_index": "B",
+    "problem_name": "Petr and Permutations",
+    "problem_url": "https://codeforces.com/contest/986/problem/B",
+    "submission_id": "CF103852273",
+    "submission_url": "https://codeforces.com/contest/986/submission/103852273",
+    "tags": [
+      "combinatorics",
+      "math",
+      "*1800"
+    ],
+    "timestamp": "Jan/09/2021 12:08"
+  },
   "CF103853271": {
     "contest_id": 1467,
     "language": "GNU C++17 (64)",
