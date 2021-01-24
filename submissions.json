@@ -1,4 +1,22 @@
 {
+  "CF105195725": {
+    "contest_id": 1104,
+    "language": "GNU C++17 (64)",
+    "path": "codeforces/1104/B.cpp",
+    "platform": "Codeforces",
+    "problem_index": "B",
+    "problem_name": "Game with string",
+    "problem_url": "https://codeforces.com/contest/1104/problem/B",
+    "submission_id": "CF105195725",
+    "submission_url": "https://codeforces.com/contest/1104/submission/105195725",
+    "tags": [
+      "data structures",
+      "implementation",
+      "math",
+      "*1200"
+    ],
+    "timestamp": "Jan/24/2021 10:43"
+  },
   "CF105196063": {
     "contest_id": 552,
     "language": "GNU C++17 (64)",
