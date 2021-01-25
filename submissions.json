@@ -1,0 +1,19 @@
+{
+  "CF105404231": {
+    "contest_id": 1475,
+    "language": "GNU C++17 (64)",
+    "path": "codeforces/1475/F.cpp",
+    "platform": "Codeforces",
+    "problem_index": "F",
+    "problem_name": "Unusual Matrix",
+    "problem_url": "https://codeforces.com/contest/1475/problem/F",
+    "submission_id": "CF105404231",
+    "submission_url": "https://codeforces.com/contest/1475/submission/105404231",
+    "tags": [
+      "2-sat",
+      "constructive algorithms",
+      "greedy"
+    ],
+    "timestamp": "Jan/25/2021 22:57"
+  }
+}
