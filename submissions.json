@@ -1,4 +1,21 @@
 {
+  "CF105308630": {
+    "contest_id": 1475,
+    "language": "GNU C++17 (64)",
+    "path": "codeforces/1475/A.cpp",
+    "platform": "Codeforces",
+    "problem_index": "A",
+    "problem_name": "Odd Divisor",
+    "problem_url": "https://codeforces.com/contest/1475/problem/A",
+    "submission_id": "CF105308630",
+    "submission_url": "https://codeforces.com/contest/1475/submission/105308630",
+    "tags": [
+      "bitmasks",
+      "math",
+      "number theory"
+    ],
+    "timestamp": "Jan/25/2021 20:32"
+  },
   "CF105312521": {
     "contest_id": 1475,
     "language": "GNU C++17 (64)",
